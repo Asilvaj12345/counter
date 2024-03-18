@@ -18,7 +18,7 @@ module tt_um_counter (
 
   // All output pins must be assigned. If not used, assign to 0.
 
-    counter #(.bits(4)) c1 (.clk(uio_in[7]) , .rst(uio_in[6], .select(uio_in[5]), .count(uio_out[3:0]));
+    counter #(.bits(4)) c1 (.clk(uio_in[7]) , .rst(uio_in[6]), .select(uio_in[5]), .count(uio_out[3:0]));
 
     assign uio_oe = 8'b00001111;
     assign uio_out[7:4] = 4'b0000;
